@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="EUC-KR" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageDashState.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageDashState.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageIdleState.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageIdleState.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageLightingState.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Boss2PageLightingState.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BossDeadState.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BossDeadState.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BossSpawnState.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BossSpawnState.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BossUIManager.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BulletShooter.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/BulletShooter.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Button.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Button.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/DefeatedTitleUI.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/DefeatedTitleUI.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/EndingScene.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/EndingScene.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Lightning.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/Lightning.h" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/PlayerDeathBim.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/SceneChangeObj.cpp" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/2025_winapi_framework_21/State.h" charset="EUC-KR" />
+  </component>
+</project>

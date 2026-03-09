@@ -1,0 +1,77 @@
+프로젝트 개요 (2025_winapi_framework_21)
+
+이 프로젝트는 Win32 GDI 기반의 2D 게임 프레임워크/게임 샘플입니다. Animator/Animation 컴포넌트로 스프라이트 시트 애니메이션을 재생하고, Scene/Layer 구조로 오브젝트를 관리합니다. Tween, StateMachine 등을 통해 캐릭터(예: Boss, Player)의 상태 전환과 이동 연출을 제공합니다.
+
+핵심 구성요소
+- Animation: 스프라이트 시트에서 잘라낸 프레임들을 시간에 따라 그려주는 클래스입니다. 프레임 오프셋, 재생 속도, 루프 모드 등을 제어할 수 있습니다. 본 세션에서 다음 기능이 추가되었습니다:
+  - FlipX/FlipY: 좌우/상하 반전 렌더링 지원
+  - Scale: 렌더 크기(스케일) 조절 지원 (X, Y 축 각각 또는 균일 스케일)
+- Animator: 여러 Animation을 보유하고 이름으로 선택/재생하는 컴포넌트입니다. Play, Stop, Pause/Resume 등을 제공합니다.
+- Texture: 스프라이트 시트 이미지를 보관하고, GDI HDC를 제공합니다.
+- Scene/Layer: 씬과 레이어 단위로 오브젝트를 관리합니다.
+- Tween/TweenManager: 시간에 따른 보간 이동 등의 연출을 담당합니다.
+- Boss, Player, State(Boss2PageDashState 등): 게임 오브젝트와 상태 로직을 포함합니다.
+
+애니메이션 사용법 요약
+1) 애니메이션 생성 (스프라이트 시트 잘라서 등록)
+   Animator::CreateAnimation(L"이름", tex, lt, slice, step, frameCount, durationPerFrame);
+
+2) 재생
+   Animator::Play(L"이름", PlayMode::Loop, /*loopCount=*/1, /*speed=*/1.0f);
+
+3) Flip(반전) 제어 (Animation 인스턴스에서)
+   Animation* anim = animator->GetCurrent();
+   anim->SetFlipX(true);   // 좌우 반전
+   anim->SetFlipY(false);  // 상하 반전 해제
+   // 한번에 설정하려면: anim->SetFlip(true, false);
+
+4) 크기(스케일) 제어 (새로 추가)
+   // 균일 스케일
+   anim->SetScale(2.0f);        // 가로/세로 2배로 확대 렌더링
+   // 비균일 스케일
+   anim->SetScale(1.5f, 0.75f); // 가로 1.5배, 세로 0.75배
+   // Vec2를 직접
+   anim->SetScale(Vec2{1.0f, 1.0f}); // 기본값 (원본 크기)
+
+동작 방식(내부 구현 메모)
+- Flip 처리: TransparentBlt에 음수 폭/높이를 직접 넘기지 않고, StretchBlt로 임시 호환 비트맵에 뒤집어 그린 뒤 TransparentBlt로 대상 HDC에 전송합니다. 이는 GDI API 오류(에러 코드 0) 방지 목적입니다.
+- Scale 처리: 대상 그리기 크기(dw, dh)를 스케일(m_scale.x, m_scale.y)을 곱해 계산합니다. 중심 정렬을 유지하도록 dx, dy는 스케일된 크기를 기준으로 계산합니다. Flip 경로에서도 임시 비트맵의 소스 영역은 원본 크기를 사용하고, 최종 TransparentBlt 단계에서 스케일된 dw, dh로 출력합니다.
+- 투명색: RGB(255, 0, 255) (마젠타)를 컬러키로 사용합니다.
+
+관련 코드 위치 (경로 기준: 2025_winapi_framework_21)
+- Animation.h / Animation.cpp: Flip/Scale API와 렌더링 로직
+- Animator.h / Animator.cpp: 애니메이션 재생 관리
+- Boss2PageDashState.cpp: 보스 대시 상태에서 방향에 따른 FlipX 설정 예시
+
+자주 쓰는 API
+- Animation
+  - SetFlipX(bool), SetFlipY(bool), SetFlip(bool x, bool y)
+  - SetScale(float uniform) / SetScale(float x, float y) / SetScale(const Vec2&)
+  - SetFrameOffset(int index, Vec2 offset)
+  - ConfigurePlayback(PlayMode mode, int loopCount, float speed)
+  - SetOnFinished(std::function<void()>) / ClearOnFinished()  // 애니메이션이 끝날 때 1회 호출되는 콜백 등록
+  - ResetToFirstFrame(), Update(), Render(HDC)
+- Animator
+  - CreateAnimation(name, tex, lt, slice, step, frameCount, duration)
+  - Play(name, mode, loopCount, speed)
+  - Play(name, mode, loopCount, speed, onFinished)  // 종료 콜백과 함께 재생
+  - GetCurrent()
+
+빌드/실행
+- 개발 환경: Windows, C++, Win32 GDI. 솔루션 파일: 2025_winapi_framework_21.sln
+- IDE/Rider 또는 Visual Studio에서 Debug x64 구성으로 빌드 가능합니다.
+- 리소스(스프라이트 시트 텍스처)는 Texture 로더가 참조하는 경로에 배치되어야 합니다.
+
+유의 사항
+- Scale이 0 또는 음수에 가까운 값이면 렌더링되지 않거나 깨질 수 있습니다. (현재 기본 검사는 TransparentBlt 호출 전 양수 여부 확인으로 처리)
+- Flip+Scale 동시 사용 시에도 중심 정렬을 유지합니다.
+- 성능: Flip은 임시 비트맵 경유로 추가 비용이 있습니다. 빈번한 대규모 스케일/플립 조합은 성능에 영향을 줄 수 있습니다.
+
+빠른 확인 포인트
+- 좌우/상하 반전: anim->SetFlipX/Y
+- 크기 조절: anim->SetScale
+- 현재 애니메이션 핸들: animator->GetCurrent()
+
+이 문서는 코드 열람 없이도 프로젝트 목적과 사용법(Flip/Scale 포함)을 빠르게 파악하도록 작성되었습니다. 필요한 세부 구현은 2025_winapi_framework_21/Animation.* 및 Animator.*에서 확인할 수 있습니다.
+추가로 이 프로젝트를 이용하면서 사용된 부분을 이곳에 추가로 작성하여 이 문서의 정보를 늘려가야한다.
+

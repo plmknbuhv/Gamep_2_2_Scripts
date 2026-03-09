@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{e9d3299d-2786-438f-ad8d-e9ccc3ce099b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{989843fd-a3b1-48c9-ab39-083ec30b1e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\01. Core">
+      <UniqueIdentifier>{36956c4a-58f7-42f0-8d9e-3f919b840b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\02. Manager">
+      <UniqueIdentifier>{364d8c45-faf9-4d32-a7a2-5f12e36cdef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object">
+      <UniqueIdentifier>{385da11d-81d4-4f8f-aca9-47f096d60496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\04. Scene">
+      <UniqueIdentifier>{f09c7ee6-3ed5-4dc6-896b-3a1094f1e613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\05. Resource">
+      <UniqueIdentifier>{33170f72-f222-4d24-91ea-7f5baccdae5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Component">
+      <UniqueIdentifier>{f4ed9e97-1d06-435a-a1e7-b0f20a3f2898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\07. UI">
+      <UniqueIdentifier>{dff36849-a86f-480e-8129-46898797101f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\08. Module">
+      <UniqueIdentifier>{1d4e90e7-bee8-42b6-bc42-f5cfe996fd91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\99. Headers">
+      <UniqueIdentifier>{1b9b8de1-f9d9-426e-9fec-df3bdb07903f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Component\Animation">
+      <UniqueIdentifier>{c62e04b3-0e0c-448b-b8e8-a379814a709c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Component\Physics">
+      <UniqueIdentifier>{86d8e940-ae66-4efe-8f12-f3b036bda074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\02. Manager\Framework">
+      <UniqueIdentifier>{ba46377c-5b24-444d-bb7f-74bf9c260e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Component\Combat">
+      <UniqueIdentifier>{bfce7071-5359-49b7-b7b8-4920a18a5a72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Players">
+      <UniqueIdentifier>{36c5e1f9-d28e-44e1-a20f-e71d696c9e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\06. Component\FSM">
+      <UniqueIdentifier>{ff1b797b-dc6d-462c-8fca-fc7136a4931c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Boss">
+      <UniqueIdentifier>{491716c5-f52f-4f52-9615-3f36e4bf2aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Boss\State">
+      <UniqueIdentifier>{d522e561-51da-4457-813b-ad4cf30d6fae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Boss\State\2Page">
+      <UniqueIdentifier>{b50ca885-d222-4778-b56b-f1f723154004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Boss\State\1Page">
+      <UniqueIdentifier>{e7b9234d-7ee6-475b-b709-7c0b957c8800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\02. Manager\Tween">
+      <UniqueIdentifier>{87ccbfa6-b932-4b8d-a21f-e04372a55be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Players\Melee">
+      <UniqueIdentifier>{b7e9199d-5a7d-439a-acfd-6010278566b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Players\Ranged">
+      <UniqueIdentifier>{43ebf2a1-b2b5-47c5-8273-22d43692e258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Skill">
+      <UniqueIdentifier>{60d2d51c-a387-4697-9944-f4855cdc9d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\ETC">
+      <UniqueIdentifier>{56a55b7c-1aaa-4020-b5d4-d2196450a672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Effect">
+      <UniqueIdentifier>{8b41d5ad-8ed3-4033-a046-fc256b3d0782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\03. Object\Boss\State\Normal">
+      <UniqueIdentifier>{545d17b7-53ae-4d3b-a793-94f691159911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2025_winapi_framework_21.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Engine\01. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>Engine\99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Engine\99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Engine\03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWindow.h">
+      <Filter>Engine\01. Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>Engine\99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Engine\04. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Engine\99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Engine\03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>Engine\05. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Engine\05. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Engine\06. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Engine\06. Component\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="GDISelector.h">
+      <Filter>Engine\08. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Engine\06. Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Engine\06. Component\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigidbody.h">
+      <Filter>Engine\06. Component\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>Engine\04. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Engine\03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Health.h">
+      <Filter>Engine\06. Component\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>Engine\06. Component\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Engine\03. Object\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Engine\06. Component\FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="BossState.h">
+      <Filter>Engine\03. Object\Boss\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Engine\07. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2PageDashState.h">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2PageGroundPangState.h">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2PageIdleState.h">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2PageLightingState.h">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Engine\04. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Tween.h">
+      <Filter>Engine\02. Manager\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="TweenManager.h">
+      <Filter>Engine\02. Manager\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1PageSmashSkillState.h">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1PageWorldDashState.h">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletShooter.h">
+      <Filter>Engine\06. Component\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerIdleState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMoveState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleePlayer.h">
+      <Filter>Engine\03. Object\Players\Melee</Filter>
+    </ClInclude>
+    <ClInclude Include="RangedAttackState.h">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClInclude>
+    <ClInclude Include="RangedPlayer.h">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBullet.h">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanAttackState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss2PageSpawnBabyState.h">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClInclude>
+    <ClInclude Include="Baby.h">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="DashImpactArea.h">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Lightning.h">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlap.h">
+      <Filter>Engine\08. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleeAttackState.h">
+      <Filter>Engine\03. Object\Players\Melee</Filter>
+    </ClInclude>
+    <ClInclude Include="BossUIManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpulseManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHitState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Engine\03. Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBulletEffect.h">
+      <Filter>Engine\03. Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthHitObj.h">
+      <Filter>Engine\03. Object\ETC</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerDeadState.h">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss1PageSpawnBabyGroup.h">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseBossSkillState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="BossChangePhaseState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="BossIdleState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="BossMoveState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="BossSpawnState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Engine\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowRenderer.h">
+      <Filter>Engine\06. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="BossDeadState.h">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="2025_winapi_framework_21.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="2025_winapi_framework_21.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Engine\01. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Engine\03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseWindow.cpp">
+      <Filter>Engine\01. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Engine\04. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Engine\01. Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Engine\03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>Engine\05. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Engine\05. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Engine\06. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Engine\06. Component\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="GDISelector.cpp">
+      <Filter>Engine\08. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Engine\02. Manager\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Engine\06. Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Engine\06. Component\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigidbody.cpp">
+      <Filter>Engine\06. Component\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Engine\04. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Engine\03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Health.cpp">
+      <Filter>Engine\06. Component\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>Engine\06. Component\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Engine\03. Object\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Engine\06. Component\FSM</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Engine\07. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2PageDashState.cpp">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2PageGroundPangState.cpp">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2PageIdleState.cpp">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2PageLightingState.cpp">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletShooter.cpp">
+      <Filter>Engine\06. Component\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Engine\04. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TweenManager.cpp">
+      <Filter>Engine\02. Manager\Tween</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1PageSmashSkillState.cpp">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1PageWorldDashState.cpp">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerIdleState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="MeleePlayer.cpp">
+      <Filter>Engine\03. Object\Players\Melee</Filter>
+    </ClCompile>
+    <ClCompile Include="RangedAttackState.cpp">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClCompile>
+    <ClCompile Include="RangedPlayer.cpp">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBullet.cpp">
+      <Filter>Engine\03. Object\Players\Ranged</Filter>
+    </ClCompile>
+    <ClCompile Include="ICanAttackState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss2PageSpawnBabyState.cpp">
+      <Filter>Engine\03. Object\Boss\State\2Page</Filter>
+    </ClCompile>
+    <ClCompile Include="Baby.cpp">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="DashImpactArea.cpp">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Lightning.cpp">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlap.cpp">
+      <Filter>Engine\08. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="MeleeAttackState.cpp">
+      <Filter>Engine\03. Object\Players\Melee</Filter>
+    </ClCompile>
+    <ClCompile Include="BossUIManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImpulseManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHitState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Engine\03. Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBulletEffect.cpp">
+      <Filter>Engine\03. Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthHitObj.cpp">
+      <Filter>Engine\03. Object\ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Engine\03. Object\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerDeadState.cpp">
+      <Filter>Engine\03. Object\Players</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss1PageSpawnBabyGroup.cpp">
+      <Filter>Engine\03. Object\Boss\State\1Page</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseBossSkillState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="BossChangePhaseState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="BossIdleState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="BossMoveState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="BossSpawnState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Engine\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowRenderer.cpp">
+      <Filter>Engine\06. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="BossDeadState.cpp">
+      <Filter>Engine\03. Object\Boss\State\Normal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
